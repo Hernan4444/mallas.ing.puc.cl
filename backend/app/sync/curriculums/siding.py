@@ -150,10 +150,10 @@ async def fetch_siding(courses: dict[str, CourseDetails]) -> SidingInfo:
 def _filter_relevant_cyears(cyears: StringArray | None) -> bool:
     if cyears is None:
         return False
-    cyears.strings.string = [
-        cyear for cyear in cyears.strings.string or [] if cyear >= IGNORE_CYEARS_BEFORE
+    cyears.strings = [
+        cyear for cyear in cyears.strings or [] if cyear >= IGNORE_CYEARS_BEFORE
     ]
-    return len(cyears.strings.string) > 0
+    return len(cyears.strings) > 0
 
 
 async def _fetch_siding_plans(siding: SidingInfo):
@@ -161,7 +161,7 @@ async def _fetch_siding_plans(siding: SidingInfo):
     for major in siding.majors:
         if major.Curriculum is None:
             continue
-        for cyear_str in major.Curriculum.strings.string or []:
+        for cyear_str in major.Curriculum.strings or []:
             cyear = cyear_from_str(cyear_str)
             if cyear is None:
                 log.error(
@@ -184,7 +184,7 @@ async def _fetch_siding_plans(siding: SidingInfo):
     for minor in siding.minors:
         if minor.Curriculum is None:
             continue
-        for cyear_str in minor.Curriculum.strings.string or []:
+        for cyear_str in minor.Curriculum.strings or []:
             cyear = cyear_from_str(cyear_str)
             if cyear is None:
                 log.error(
@@ -207,7 +207,7 @@ async def _fetch_siding_plans(siding: SidingInfo):
     for title in siding.titles:
         if title.Curriculum is None:
             continue
-        for cyear_str in title.Curriculum.strings.string or []:
+        for cyear_str in title.Curriculum.strings or []:
             cyear = cyear_from_str(cyear_str)
             if cyear is None:
                 log.error(
@@ -384,7 +384,7 @@ def _fill_in_c2022_titles(courses: dict[str, CourseDetails], siding: SidingInfo)
     for title in siding.titles:
         if title.Curriculum is None:
             continue
-        cyears = title.Curriculum.strings.string
+        cyears = title.Curriculum.strings
         if cyears and "C2020" in cyears and "C2022" not in cyears:
             cyears.append("C2022")
             siding.plans["C2022"].plans[title.CodTitulo] = siding.plans["C2020"].plans[

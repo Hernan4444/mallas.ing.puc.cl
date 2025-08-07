@@ -23,7 +23,7 @@ class StringArrayInner(BaseModel):
 
 
 class StringArray(BaseModel):
-    strings: StringArrayInner
+    strings: StringArrayInner | list[str] | None
 
 
 class Major(BaseModel):
@@ -221,7 +221,13 @@ def parse_nullable_list(ty: type[T], value: Any) -> list[T]:  # noqa: ANN401
 def decode_cyears(cyears: StringArray | None) -> list[str]:
     if cyears is None:
         return []
-    return cyears.strings.string or []
+    if isinstance(cyears.strings, StringArrayInner):
+        return cyears.strings.string or []
+
+    if isinstance(cyears.strings, list):
+        return cyears.strings
+
+    return []
 
 
 class SoapClient:
