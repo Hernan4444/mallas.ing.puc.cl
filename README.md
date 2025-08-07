@@ -65,7 +65,7 @@ Sigue en la sección [Desarrollo general](#desarrollo-general).
 ### Desarrollo general
 
 - El Dev Container correrá automaticamente el setup necesario con `just init`. Espera que termine para continuar.
-- Utiliza `Run and Debug` de VSCode con `Launch all 🚀` para correr todos los servicios al mismo tiempo. Espera que el backend (que puedes inspeccionar en `Python Debug Console`) termine de correr para continuar (cuando se muestre _"Aplication startup complete"_).
+- Utiliza `Run and Debug` de VSCode con `Launch all 🚀` para correr todos los servicios al mismo tiempo. Espera que el backend (que puedes inspeccionar en `Python Debug Console`) termine de correr para continuar (cuando se muestre _"Application startup complete"_).
 
 Una vez listo, podrás entrar a la app en [http://localhost:3000](http://localhost:3000) 🎉
 
