@@ -199,7 +199,8 @@ def extract_true_offer(
     for program in offer:
         for cyear_str in decode_cyears(program.Curriculum):
             cyear = cyear_from_str(cyear_str)
-            assert cyear is not None
+            if cyear is None:  # C2023 o superior
+                continue
             result = filter_program(
                 cyear,
                 program,
@@ -324,7 +325,7 @@ def filter_program(
         program_type = program.TipoTitulo
 
     if code not in scraped:
-        counter.not_in_scrape.add(code)
+        counter.not_in_scrape.add((code, cyear))
         return None
 
     blocks = filter_relevant_blocks(
@@ -333,7 +334,7 @@ def filter_program(
         keep_others,
     )
     if not blocks:
-        counter.no_malla.add(code)
+        counter.no_malla.add((code, cyear))
         if require_siding:
             return None
     siding.plans[cyear].plans[code] = blocks
