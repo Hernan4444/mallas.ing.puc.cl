@@ -123,6 +123,12 @@ class Settings(BaseSettings):
         "../cursos-uc-data/coursedata_2025.json.xz",
     )
 
+    # Path for buscacursos-dl, the current temporary catalogo and buscacursos scraper
+    # that we use as a courseinfo source.
+    mallas_nuevas: Path = Path(
+        "../siding-mock-data/mallas_nuevas.json",
+    )
+
     # Logging level
     log_level: Literal[
         "CRITICAL",

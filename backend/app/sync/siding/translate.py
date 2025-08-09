@@ -2,6 +2,7 @@
 Transform the Siding format into something usable.
 """
 
+import json
 import logging
 from dataclasses import dataclass
 
@@ -26,6 +27,7 @@ from app.plan.validation.curriculum.tree import (
     TitleCode,
     cyear_from_str,
 )
+from app.settings import settings
 from app.sync.siding import client
 from app.sync.siding.client import (
     CursoHecho,
@@ -218,7 +220,30 @@ def fix_major_code(code: str | None, raw_courses: CursosHechos):
     elif code not in ["M265", "M206"]:
         return MajorCode(code)
 
-    return MajorCode(code + "-A1")
+    # Obtener cursos por área de los majors parchados para determinar
+    # a qué área pertenece este alumno
+    with settings.mallas_nuevas.open() as file:
+        mallas_nuevas = json.load(file)
+
+    new_majors_courses = {}
+    for key, courses in mallas_nuevas["getListaPredefinida"].items():
+        key = json.loads(key)["CodLista"]
+        major, area = key[1:].split("H4444")
+        new_majors_courses[major] = new_majors_courses.get(major, {})
+        new_majors_courses[major]["A" + area] = set()
+        for course in courses:
+            new_majors_courses[major]["A" + area].add(course["Sigla"])
+    actual_major = new_majors_courses[code]
+
+    counter_area = {key: 0 for key in actual_major}
+    for semestre in raw_courses.cursos:
+        for c in semestre:
+            for key in actual_major:
+                if c.code in actual_major[key]:
+                    counter_area[key] += 1
+    area = max(counter_area, key=counter_area.get)
+    return MajorCode(f"{code}-{area}")
+
 
 async def fetch_student_info(rut: Rut) -> StudentInfo:
     """
