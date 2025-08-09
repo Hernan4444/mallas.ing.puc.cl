@@ -244,6 +244,11 @@ class SoapClient:
         # Load mock data
         if settings.siding_mock_path != "":
             try:
+                extend_cases = [
+                    "getListadoMajor",
+                    "getListadoMinor",
+                    "getListadoTitulo",
+                ]
                 # Clear mock DB
                 self.mock_db = {}
                 # Read all files in the index
@@ -255,8 +260,17 @@ class SoapClient:
                     # Merge submock with main mock DB
                     for endpoint_name, responses in submock.items():
                         db_responses = self.mock_db.setdefault(endpoint_name, {})
-                        for request_key, response in responses.items():
-                            db_responses[request_key] = response
+                        if endpoint_name in extend_cases:
+                            if "{}" not in responses:
+                                continue
+                            if "{}" in db_responses:
+                                db_responses["{}"].extend(responses["{}"])
+                            else:
+                                db_responses["{}"] = responses["{}"]
+                        else:
+                            for request_key, response in responses.items():
+                                db_responses[request_key] = response
+
                 # Log that we've finished
                 cnt = sum(len(r) for r in self.mock_db.values())
                 logging.info(

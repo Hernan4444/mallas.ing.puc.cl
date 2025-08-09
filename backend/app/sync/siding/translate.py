@@ -211,6 +211,15 @@ async def _fetch_done_courses(rut: Rut) -> CursosHechos:
     )
 
 
+def fix_major_code(code: str | None, raw_courses: CursosHechos):
+    if code is None:
+        return None
+
+    elif code not in ["M265", "M206"]:
+        return MajorCode(code)
+
+    return MajorCode(code + "-A1")
+
 async def fetch_student_info(rut: Rut) -> StudentInfo:
     """
     MUST BE CALLED WITH AUTHORIZATION
@@ -228,9 +237,7 @@ async def fetch_student_info(rut: Rut) -> StudentInfo:
         full_name=raw_meta.Nombre,
         cyear=raw_meta.Curriculo,
         is_cyear_supported=cyear_from_str(raw_meta.Curriculo) is not None,
-        reported_major=MajorCode(raw_meta.MajorInscrito)
-        if raw_meta.MajorInscrito
-        else None,
+        reported_major=fix_major_code(raw_meta.MajorInscrito, raw_courses),
         reported_minor=MinorCode(raw_meta.MinorInscrito)
         if raw_meta.MinorInscrito
         else None,

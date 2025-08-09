@@ -96,7 +96,18 @@ def _validate_possibly_outdated(
         )
 
 
+def _fix_subarea_temporal(code: str  | None ):
+    """
+    Hay majors con formato MXXX-AY (parche temporal) para simular diferentes áreas del mismo 
+    major. Aquí se quita el prefijo para dejar únicamente el major original.
+    """
+    if code is None:
+        return code
+    return code.split("-")[0]
+
 def _is_mismatched(selected: str | None, reported: str | None):
+    selected = _fix_subarea_temporal(selected)
+    reported = _fix_subarea_temporal(reported)
     return (
         reported is not None
         and selected is not None
@@ -127,7 +138,7 @@ def validate_against_owner(
                 plan=plan.curriculum,
                 user=CurriculumSpec(
                     cyear=plan.curriculum.cyear,
-                    major=user_ctx.reported_major,
+                    major=_fix_subarea_temporal(user_ctx.reported_major),
                     minor=user_ctx.reported_minor,
                     title=user_ctx.reported_title,
                 ),

@@ -67,7 +67,9 @@ class CurriculumCode(str):
 
 
 class MajorCode(CurriculumCode):
-    _pattern = re.compile(r"^M[0-9]{3}$")
+    # Fix para permitir majors con el formato (MXXX-TX).
+    # Esto es para agregar majors con átras/track pero que no tiene un código
+    _pattern = re.compile(r"^M[0-9]{3}(-A\d)?$")
 
     @classmethod
     def __modify_schema__(cls: type[Self], field_schema: dict[str, Any]) -> None:

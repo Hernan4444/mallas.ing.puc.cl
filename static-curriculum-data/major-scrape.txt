@@ -9433,3 +9433,172 @@ FIS0154
 obligatorio, y esde la admisión 2019 es de carácter opcional. Si el curso ING1110
 Taller de Hábitos y Estrategias de estudio fue aprobado previamente, será
 reconocido por el curso ING1111
+250 cr 1.3 Base General para Major 50 cr
+MAT1203 Álgebra Lineal 10
+1.1 Ciencias Básicas (mínimos) 120 cr ING1004 Desafíos de la Ingeniería 10
+MAT1610 Cálculo I 10 MAT1630 Cálculo III 10
+QIM100E Química para Ingeniería 10 MAT1640 Ecuaciones Diferenciales 10
+MAT1620 Cálculo II 10
+FIS1514 o Optativo de Exploración de Major (b) 10
+ICE1514 (*) Curso exploratorio recomendado
+FIS0154 Laboratorio de Dinámica 0 Elegir 10 cr entre:
+ICS1513 Introducción a la Economía 10 AQH0000 Introducción a la Arquitectura 10
+IIC1103 Introducción a la Programación 10 ICC2304 Ingeniería de Construcción 10
+ICE2006 Estática 10
+ICE2623 o Introducción a la Geología física
+IMM2003 Geología Minera
+IIQ103H Termodinámica Honors IBM1005 Introducción a la Ingeniería Biomédica 10
+FIS0152 Laboratorio de Termodinámica 0 ICH1005 Desafíos en Recursos Hídricos y Medio Ambiente 10
+EYP1113 Probabilidades y Estadística 10 ICH1104 Mecánica de Fluidos 10
+FIS1533 o Electricidad y Magnetismo ICH2304 Ingeniería Ambiental 10
+IEE1533 Fundamentos de Teoría Electromagnética ICM1002 Diseño Gráfico en Ingeniería Mecánica 10
+FIS0153 Laboratorio de Electricidad y Magnetismo 0 ICS1113 o Optimización
+ING2030 Investigación, Innovación y Emprendimiento 10 ICS113H Optimización-Honors
+ICT2904 Ingeniería de Sistemas de Transporte 10
+Optativo Biológico 10 IEE1100 Introducción a la Ingeniería Eléctrica 10
+Elegir 10 cr. IIC1005 Computación: Ciencia y Tecnología del Mundo Digital 10
+BIO110C Biología de Organismos y Comunidades 10 IIQ1001 Introducción a la Ingeniería Química 10
+BIO141C Biología de la Célula 10 IIQ2663 Fundamentos de Biotecnología 10
+BIO135C Fisiología 10 IMM1003 Introducción a la Minería 10
+BIO143M Principios Ecológicos y Medio Ambiente 10 IMT1001 Introducción a la Ingeniería Matemática 10
+10 IDI1015 Pensamiento Visual 10
+ING1024 Propiedades y Resistencia de Materiales 10
+IRB1010 Introducción Exploratoria a la Robótica 10
+Optativo de Fundamentos de Ciencias o Ingeniería (b) 10 cr (*) IFI1001 Introducción a la Ingeniería Física 10
+Elegir 10 cr. entre ICC1001 Introducción a la Ingeniería Civil 10
+ICE2006 Estática 10
+ICE2623 o Introducción a la Geología física 350 cr
+IMM2003 Geología Minera Mínimos 80 cr
+ICH1104 Mecánica de Fluidos 10 FIZ0311 Física Moderna 10
+ICS1113 o Optimización FIZ311L Laboratorio de Física Moderna 0
+ICS113H Optimización-Honors FIZ0313 Métodos de Física Matemática II 10
+IEE1133 Materiales Eléctricos 10 FIZ0322 Física Cuántica I 10
+IEE2103 Señales y Sistemas 10 FIZ0312 Ondas y óptica 10
+IEE2123 Circuitos Eléctricos 10 FIZ312L Laboratorio de Ondas y Opticas 10
+IIC1253 Matemáticas Discretas 10 IEE2123 Circuitos Eléctricos 10
+IIQ2663 Fundamentos de Biotecnología 10 FIZ0222 o Mecánica Clásica II 10
+ING1024 Propiedades y Resistencia de Materiales 10 ICM2803 Dinámica de Sistemas Mecánicos
+QIM200 Química Orgánica Fundamental 10 FIZ0321 o 10
+IDI1015 Pensamiento Visual 10 IEE2113
+ING2045 Introducción a la Sustentabilidad 10 IFI2122 Taller de Ingeniería Física (Capstone) 10
+ING2055 Análisis y Aplicación de Observaciones Geoespaciales 10 Elegir 20 cr. En una de las siguientes áreas:
+IIQ2930 Introducción a la Ingeniería Gastronómica 10 Área de Ingeniería Mecánica
+ING2050 ICH1104 Mecánica de Fluidos 10
+ICM2403 Ciencia de los Materiales
+IIC2233 Programación Avanzada 10 FIZ1426 Topicos en Ciencia de Materiales
+SUS1000 CMD Sustentabilidad 10 ICM2028 Mecánica de Materiales
+ETI188 Ética para Ingeniería 10 ICE2313 Mecánica de Sólidos
+10 ICM2213 Conversión de Energía (i) 10
+Área de Ingeniería Eléctrica
+10 IEE2103 Señales y Sistemas 10
+IEE2413 Electrónica 10
+1.2 Formación General 80 cr IEE2613 Control Automático (j) 10
+Electivos en disciplinas diferentes a las otras (c) 60 IEE2713 Sistemas Digitales 10
+FIL2001 Filosofía, ¿para qué? 10 IEE2463 Sistemas Electrónicos Programables (k) 10
+Curso de Formación Teológica 10 Área de Física(f)
+FIZ0411 Mecánica estadística 10
+FIZ0412 Física Cuántica II 10
+10
+10
+Teoría Electromagnética
+10
+10
+10
+2. Major
+10
+Grado de Licenciado en Ciencias de la Ingeniería
+(M265) Major en Ingeniería Física Vs.02
+Vigente ingreso 2022 y posteriores [última actualización: junio, 2024]
+1. Plan común de Licenciatura
+Dinámica 10
+FIS1523 o
+IIQ1003 o
+ICM1003 o
+Termodinámica
+10
+Otro curso del área medicina, biología o agronomía nivel 100 o 1000
+(a)
+10
+Desarrollo y Aplicaciones de Sistemas Aéreos No
+Tripulados
+10
+Otro curso perteneciente a la Escuela de Ingeniería nivel 1000 o 2000,
+excepto cursos que formen parte del plan de Formación General UC. (a)
+10 cr. en cursos de Investigación en pregrado del listado que se detalla. (h)
+400 cr
+3.1 Minor de Profundidad
+Este Major no cuenta con Minor de Profundidad asociado. 4.1 ING1111 Introducción al Aprendizaje Universitario (l) 0
+4.2 VRA100C Examen de Comunicacion Escrita (Ece) 0
+3.2 Minors de Amplitud Excluidos (e) 4.3 VRA3010 English Test (Sufficiency Alte 3) 0
+Este Major no cuenta con Minors de Amplitud excluidos. 4.4 ING1001 Práctica I (g) 0
+4.5 Examen de Competencias Fundamentales 0
+Notas:
+(a) (h)
+(b)
+ING0600 o
+(c) ING0601
+ING0700 o
+ING0701
+ING0901 o
+ING0902 o
+ING0903
+xxx2985 o
+xxx2986 o
+xxx2987
+xxx2972 o
+xxx2981
+(d) (i)
+(e)
+(f) (j)
+(k)
+(g) (l)
+3. Minor (d)
+El estudiante deberá elegir un Minor de Amplitud de un listado determinado.
+4. Requisitos adicionales para obtener el grado de Licenciado en Ciencias de la
+Ingeniería: 0 cr
+El curso debe ser aprobado por el Comité de Pregrado de la Escuela de Ingeniería.
+Si se cursa una asignatura que forme parte de los cursos mínimos del Major,
+deberá seleccionarse otro optativo del listado.
+Los planes de estudio de los Minor de Amplitud se encuentran en documento
+Se recomienda al alumno realizar la Práctica I a fines del primer año.
+El estudiante podrá cursar como optativo de Fundamentos de Ciencia o Ingeniería
+hasta dos cursos (10 cr en total) de Investigación en pregrado de la siguiente lista:
+Trabajo Personal Dirigido 5
+Esta Área es conducente (no exclusivamente) en el segundo ciclo a:
+a. Estudios de postgrado, Física UC
+b. Estudios de postgrado y titulación en paralelo, Ingeniería UC
+c. Estudios de postgrado dentro y fuera de Chile
+Todos los estudiantes deberán aprobar 10 créditos de cada una de las siguientes
+áreas:
+- Ecología Integral / Sustentabilidad
+- Humanidades
+- Salud y Bienestar
+- Ciencias Sociales
+- Artes
+- Área libre: los estudiantes podrán elegir un curso que profundice en algún área
+de Ingeniería, o bien otro curso de alguna de las áreas anteriormente listadas.
+Trabajo Personal Dirigido 5
+Este curso es en modalidad Online y es es de carácter opcional.
+Investigación o Proyecto 10
+Pasantía de Investigación
+(Pueden ser nacional, extranjero o empresas)
+El curso IEE2463 Sistemas Electrónicos Programables requiere la aprobación previa
+de IEE2713 Sistemas DIgitales.
+10
+Investigación o Proyecto
+(las letras iniciales dependerán del departamento del profesor
+guía)
+10
+El curso ICM2213 Conversión de Energía requiere la aprobación previa de ICH1104
+Mecánica de Fluidos.
+El curso IEE2613 Control Automático requiere la aprobación previa de IEE2103
+Señales y Sistemas. 
+(M265-A1)
+(M265-A2)
+(M265-A3)
+(M206-A1)
+(M206-A2)
+(M206-A3)
+(M206-A4)
+(M206-A5)
+(M267)
