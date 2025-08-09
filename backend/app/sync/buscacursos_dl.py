@@ -4,7 +4,6 @@ from collections.abc import Callable
 from typing import NoReturn
 
 import pydantic
-import requests
 from prisma.models import Course as DbCourse
 from prisma.types import CourseCreateWithoutRelationsInput
 from pydantic import BaseModel
@@ -348,16 +347,10 @@ def _translate_courses(data: BcData) -> list[CourseCreateWithoutRelationsInput]:
 
 
 async def fetch_to_database():
-    # Fetch json blob from an unofficial source
-    dl_url = settings.buscacursos_dl_url
-    print(f"  downloading course data from {dl_url}...")
-    # TODO: Use an async HTTP client
-    resp = requests.request("GET", dl_url, timeout=60)
-    resp.raise_for_status()
-
     # Decompress
     print("  decompressing data...")
-    resptext = lzma.decompress(resp.content).decode("UTF-8")
+    with lzma.open(settings.buscacursos_dl_path, "rt", encoding="utf-8") as f_in:
+        resptext = f_in.read()
 
     # Parse JSON
     print("  parsing JSON...")

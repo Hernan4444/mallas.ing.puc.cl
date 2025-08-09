@@ -117,10 +117,10 @@ class Settings(BaseSettings):
     # URL for the Redis server.
     redis_uri: RedisDsn = Field("redis://redis:6379/0")
 
-    # URL for buscacursos-dl, the current temporary catalogo and buscacursos scraper
+    # Path for buscacursos-dl, the current temporary catalogo and buscacursos scraper
     # that we use as a courseinfo source.
-    buscacursos_dl_url: AnyHttpUrl = Field(
-        "https://github.com/kovaxis/buscacursos-dl/releases/download/universal-5/coursedata.json.xz",
+    buscacursos_dl_path: Path = Path(
+        "../cursos-uc-data/coursedata_2025.json.xz",
     )
 
     # Logging level
