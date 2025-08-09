@@ -17,7 +17,7 @@ interface CurriculumSelectorProps {
 interface SelectorProps {
   name: string
   canDeselect: boolean
-  data: Record<string, { name: string }>
+  data: Record<string, { name: string, version: string }>
   value: string | null
   showCode: boolean
   onChange: (value: string) => void
@@ -31,7 +31,7 @@ const Selector = memo(function _Selector ({
   showCode,
   onChange
 }: SelectorProps): JSX.Element {
-  const selectedOption = value != null ? (data[value] ?? { name: `${name} Desconocido` }) : { name: 'Por Seleccionar' }
+  const selectedOption = value != null ? (data[value] ?? { name: `${name} Desconocido`, version: '' }) : { name: 'Por Seleccionar', version: '' }
   useEffect(() => {
     if (value !== undefined && value !== null && data[value] === undefined) {
       toast.warn(`Tu ${name.toLowerCase()} todavía no está soportado oficialmente. Los cursos pueden estar incorrectos, revisa dos veces.`, {
@@ -45,7 +45,7 @@ const Selector = memo(function _Selector ({
     <Listbox value={value} onChange={onChange}>
       <Listbox.Button className="selectorButton">
         <span className="inline truncate">
-          {selectedOption.name} {showCode && value != null && `(${value})`}
+          {selectedOption.name} {name === 'Major' ? selectedOption.version : ''} {showCode && value != null && `(${value})`}
         </span>
         <svg
           className="inline"
@@ -95,7 +95,7 @@ const Selector = memo(function _Selector ({
                 <span
                   className={`block truncate ${selected ? 'font-medium text-black' : 'font-normal'}`}
                 >
-                  {data[key].name} {showCode && `(${key})`}
+                  {data[key].name} {name === 'Major' ? data[key].version : ''} {showCode && `(${key})`}
                 </span>
                 {selected
                   ? (
@@ -193,8 +193,8 @@ const CurriculumSelector = memo(function CurriculumSelector ({
               name="Curriculum"
               canDeselect={false}
               data={{
-                C2020: { name: 'Admisión 2020 y 2021' },
-                C2022: { name: 'Admisión 2022 y posteriores' }
+                C2020: { name: 'Admisión 2020 y 2021', version: '' },
+                C2022: { name: 'Admisión 2022 y posteriores', version: '' }
               }}
               value={curriculumSpec.cyear}
               showCode={true}
