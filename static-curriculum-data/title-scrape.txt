@@ -307,8 +307,10 @@ BLOQUE ESPECIALIZACIÓN
 1.1 Mínimos Especialidad
 ICC3125
 Tecnología y Construcción del Hormigón
-ICC3141
+ICC3141 o
 Patología y Rehabilitación de Infraestructuras
+ICC3543
+Gestión de Infraestructura
 ICC3214
 Administración de Proyectos
 ICC3434
@@ -829,6 +831,8 @@ ICC3521
 Diseño Estructural de Pavimentos
 ICC3134
 Tecnologia y Construcción de Asfalto
+ICC3141 o
+Patología y Rehabilitación de Infraestructuras
 ICC3543
 Gestión de Infraestructura
 ICT3103
@@ -1559,6 +1563,8 @@ Economía y Modelos de Localización Urbana60 Cr.
 Elegir 10 cr entre: (Área Logística)
 ICS3223
 Gestión Logística
+ICT3333
+Transporte Aéreo
 ICT3463
 Métodos Avanzados para Sistemas de Transporte y Logística
 ICT3464
@@ -1711,27 +1717,9 @@ Desarrollo de Software (Proyecto de Título)60 Cr.
 10
 10
 1.2 Optativos Especialidad
-Elegir 10 cr de cada área:
-Área 1: Área Ingeniería de Software (b) (c)
-IIC3380
-Taller de Aplicaciones en Plataformas Moviles
-IIC3585
-Diseño Avanzado de Aplicaciones Web20 cr.
-Área 2: Inteligencia de Máquina (b) (c)
-IIC3423
-Big Data
-IIC3633
-Sistemas Recomendadores
-IIC3640
-Modelos Gráficos Probabilísticos
-IIC3692
-Tópicos Avanzados en Inteligencia Artificial
-IIC3695
-Tópicos Avanzados en Inteligencia de Máquina
-IIC3697
-Aprendizaje Profundo
-IIC3724
-Reconocimiento de Patrones
+Elegir 20 cr nivel 3000 ICC. (b) (c) (e) 20 cr.
+Podrán solicitar evaluación de otros cursos nivel 3000 de otros departamentos, previo a realizar 
+el curso y 2 meses antes del proceso de inscripción de cursos.
 BLOQUE ESPECIALIZACIÓN TÍTULO
 1.1 Mínimos Ingeniería Civil de Industrias
 ICS3913
@@ -2490,8 +2478,8 @@ ICH3384
 Biotecnología Ambiental
 ICS3413
 Finanzas
-ICH3900
-Taller de Proyectos en Ingeniería Hidráulica y Ambiental (Proyecto de Título)70 Cr.
+IIQ3253
+Evaluacion y Diseño de Procesos y Bioprocesos (Proyecto de Título)70 Cr.
 40 cr.
 10
 10
@@ -2509,6 +2497,12 @@ ICH3350
 Microbiología Aplicada a la Ingeniería Ambiental
 IIQ3663
 Sistemas Microbiológicos
+IIQ3853
+Catalisis Enzimatica Industrial 
+IIQ3602
+Biopolímeros
+IBM3404
+Redes Metabolicas: Reconstruccion y Aplicaciones
 IIQ3683
 Biotecnología Microbiana30 cr.
 30 cr.
@@ -3309,12 +3303,14 @@ IIQ3602
 Biopolímeros
 IIQ3663
 Sistemas Microbiológicos
-IIQ3763
-Análisis de Sistemas Complejos
 IIQ3782
 Biotecnología de Alimentos
-IIQ3823
-Optimización de Redes Metabólicas30 cr.
+IIQ3853
+Catalisis Enzimatica Industrial
+IBM3404
+Redes Metabolicas: Reconstruccion y Aplicaciones
+IIQ3003
+Modelación Computacional de Fenómenos de Transport30 cr.
 30 cr.
 10
 10
@@ -3536,59 +3532,10 @@ Desarrollo de Sistemas Complejos (Proyecto de Título)80 Cr.
 10
 10
 1.2 Optativos Especialidad
-Elegir 10 cr de cada área
-Área 1: Inteligencia de Máquina
-IIC3633
-Sistemas Recomendadores
-IIC3640
-Modelos Gráficos Probabilísticos
-IIC3692
-Topicos Avanzados en Inteligencia Artificial
-IIC3695
-Tópicos Avanzados en Inteligencia de Máquina
-IIC3697
-Aprendizaje Profundo
-IIC3724
-Reconocimiento de Patrones40 cr.
-10
-10
-10
-10
-10
-10
-Área 2: Ingeniería de Software
-IIC3143
-Desarrollo de Software
-IIC3380
-Taller de Aplicaciones en Plataformas Moviles
-IIC3745
-Testing10
-10
-10
-Área 3: Manejo de Datos
-IIC3423
-Big Data
-IIC3413
-Implementación de Sistemas de Base de Datos
-IIC3432
-Topicos Avanzados en Bases de Datos10
-10
-10
-Área 4: Teoría de la Computación
-IIC3242
-Complejidad Computacional
-IIC3263
-Teoría de Modelos Finitos
-IIC3284
-Algoritmos y Aleatoriedad
-IIC3632
-Logica y Representacion del Conocimiento
-IIC3810
-Tópicos Avanzados en Teoría de la Computación10
-10
-10
-10
-10
+Elegir 40 cr nivel 3000 ICC. (b) (c) (e) 40 cr.
+Podrán solicitar evaluación de otros cursos nivel 3000 de otros departamentos, previo a realizar 
+el curso y 2 meses antes del proceso de inscripción de cursos.
+
 BLOQUE OPTATIVOS
 2.1 Bloque Optativos (d)
 Si el estudiante realiza en su ciclo 2, menos de 130 créditos en Bloque Inicial + Bloque
