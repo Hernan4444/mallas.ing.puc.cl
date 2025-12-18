@@ -18,7 +18,7 @@ wait-backend-start:
     set -euo pipefail
     echo -e "{{ info_prefix }} \e[1mWaiting for back-end to start...\e[0m"
     # Activate poetry virtualenv
-    source /workspaces/planner/backend/.venv/bin/activate
+    source /workspaces/mallas.ing.puc.cl/backend/.venv/bin/activate
     cd frontend
     # Wait till localhost:8000 is available
     while ! http --check-status :8000/health 2> /dev/null; do

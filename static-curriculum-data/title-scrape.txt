@@ -1717,7 +1717,7 @@ Desarrollo de Software (Proyecto de Título)60 Cr.
 10
 10
 1.2 Optativos Especialidad
-Elegir 20 cr nivel 3000 ICC. (b) (c) (e) 20 cr.
+Elegir 20 cr nivel 3000 IIC. (b) (c) (e) 20 cr.
 Podrán solicitar evaluación de otros cursos nivel 3000 de otros departamentos, previo a realizar 
 el curso y 2 meses antes del proceso de inscripción de cursos.
 BLOQUE ESPECIALIZACIÓN TÍTULO
@@ -3532,7 +3532,7 @@ Desarrollo de Sistemas Complejos (Proyecto de Título)80 Cr.
 10
 10
 1.2 Optativos Especialidad
-Elegir 40 cr nivel 3000 ICC. (b) (c) (e) 40 cr.
+Elegir 40 cr nivel 3000 IIC. (b) (c) (e) 40 cr.
 Podrán solicitar evaluación de otros cursos nivel 3000 de otros departamentos, previo a realizar 
 el curso y 2 meses antes del proceso de inscripción de cursos.
 

@@ -34,7 +34,7 @@
         "editor.defaultFormatter": "vscode.css-language-features"
     },
     // Backend
-    "python.defaultInterpreterPath": "/workspaces/planner/backend/.venv/bin/python",
+    "python.defaultInterpreterPath": "/workspaces/mallas.ing.puc.cl/backend/.venv/bin/python",
     "python.analysis.typeCheckingMode": "strict",
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.variableTypes": false,
@@ -50,7 +50,7 @@
         }
     },
     "ruff.args": [
-        "--config=/workspaces/planner/backend/pyproject.toml"
+        "--config=/workspaces/mallas.ing.puc.cl/backend/pyproject.toml"
     ],
     "python.analysis.extraPaths": [
         "backend/"
@@ -66,7 +66,7 @@
     ],
     "python.analysis.autoImportCompletions": true,
     // Ansible
-    "ansible.python.interpreterPath": "/workspaces/planner/backend/.venv/bin/python",
+    "ansible.python.interpreterPath": "/workspaces/mallas.ing.puc.cl/backend/.venv/bin/python",
     // Task running
     "debug.onTaskErrors": "debugAnyway",
 }
